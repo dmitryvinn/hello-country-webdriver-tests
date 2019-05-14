@@ -46,12 +46,6 @@ public class HybridAppCssTest {
      */
     @Test
     public void testMobileFlagState() {
-        driver.manage().window().setSize(new Dimension(374, 667));
-        driver.get(WEBSITE_URL);
-
-        WebElement flag = getFlag();
-
-        assertEquals(flag.getCssValue("display"), "none");
     }
 
     /**
@@ -59,12 +53,6 @@ public class HybridAppCssTest {
      */
     @Test
     public void testPlatformTransitionFlagState() {
-        driver.manage().window().setSize(new Dimension(443,667));
-        driver.get(WEBSITE_URL);
-
-        WebElement flag = getFlag();
-
-        assertEquals(flag.getCssValue("visibility"), "hidden");
     }
 
     private WebElement getFlag() {
